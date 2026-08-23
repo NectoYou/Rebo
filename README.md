@@ -13,7 +13,10 @@
 4. Собирай с флагом `-std=c++17`.
 
 ## Примеры
-
+//save
+ rebo::save_json(".", "config", json);
+ //load
+  rebo::load_json(".", "config", json);
 ### Сохранить и загрузить JSON
 ```cpp
 #include "rebo.hpp"
