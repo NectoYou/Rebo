@@ -14,16 +14,17 @@
 
 ## Примеры
 
-### Сохранить JSON
+### Сохранить и загрузить JSON
 ```cpp
 #include "rebo.hpp"
 #include <iostream>
 
 int main() {
-    std::string json = R"({"volume":50, "brightness":70})";
-    if (rebo::save_json(".", "config", json)) {
-        std::cout << "Saved!\n";
-    }
+     string json = "json text";
+    //save
+    rebo::save_json(".", "config", json);
+    //load
+    rebo::load_json(".", "config", json);
 }
 
 
